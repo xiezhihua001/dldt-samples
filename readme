@@ -11,3 +11,11 @@ git push -u origin master
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
+My main interest is to be able to use the Movidius compute stick (2) on the ARM platform. I was hoping that 
+I could compile the libraries and drivers necessary just for that accelerator. I tried to turn off the CPU and 
+GPU portions of the build with cmake options but it didn't seem to work. Does the Movidius NCS software still 
+require SIMD instructions?
+From the build instructions:
+To switch on/off the CPU and GPU plugins, use cmake options -DENABLE_MKL_DNN=ON/OFF and -DENABLE_CLDNN=ON/OFF.
+Thanks!  https://software.intel.com/en-us/forums/computer-vision/topic/800114
+
